@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BOT_PROMPT_CARD_ISSUE" xml:space="preserve">
+    <value>L'opération refusée est-elle</value>
+  </data>
+  <data name="BOT_PROMPT_CARD_ISSUE_PAYMENT" xml:space="preserve">
+    <value>Un paiement</value>
+  </data>
+  <data name="BOT_PROMPT_CARD_ISSUE_WITHDRAWAL" xml:space="preserve">
+    <value>Un retrait</value>
+  </data>
+  <data name="BOT_PROMPT_CONFIRM_CHOICE" xml:space="preserve">
+    <value>Vous confirmez votre choix ?</value>
+  </data>
+  <data name="BOT_PROMPT_CONFIRM_WRONG_CHOICE" xml:space="preserve">
+    <value>Ce choix n'est pas valide</value>
+  </data>
+  <data name="BOT_PROMPT_ISSUE" xml:space="preserve">
+    <value>Avec quel moyen de paiement vous avez un problème ?</value>
+  </data>
+  <data name="BOT_PROMPT_ISSUE_CARD" xml:space="preserve">
+    <value>avec votre carte bleue</value>
+  </data>
+  <data name="BOT_PROMPT_ISSUE_CHEQUE" xml:space="preserve">
+    <value>de chèque</value>
+  </data>
+  <data name="BOT_PROMPT_ISSUE_TRANSFER" xml:space="preserve">
+    <value>de virement</value>
+  </data>
+  <data name="BOT_PROMPT_ISSUE_WITHDRAWAL" xml:space="preserve">
+    <value>S'agit-il d'un retrait </value>
+  </data>
+  <data name="BOT_PROMPT_ISSUE_WITHDRAWAL_ABROAD" xml:space="preserve">
+    <value>A l'étranger</value>
+  </data>
+  <data name="BOT_PROMPT_ISSUE_WITHDRAWAL_DOMESTIC" xml:space="preserve">
+    <value>Domestique</value>
+  </data>
+  <data name="BOT_PROMPT_ISSUE_WITHDRAWAL_NEW_THRESHOLD" xml:space="preserve">
+    <value>Quel nouveau plafond souhaitez-vous ?</value>
+  </data>
+  <data name="BOT_PROMPT_ISSUE_WITHDRAWAL_NO_INCREASE_CALL_CONS" xml:space="preserve">
+    <value>Non je veux contacter mon conseiller</value>
+  </data>
+  <data name="BOT_PROMPT_ISSUE_WITHDRAWAL_NO_THRESHOLD" xml:space="preserve">
+    <value>Appel en cours de votre conseiller...</value>
+  </data>
+  <data name="BOT_PROMPT_ISSUE_WITHDRAWAL_OTHER_ATM" xml:space="preserve">
+    <value>Avez-vous essayé dans d'autres DAB ou d'autres établissements ?</value>
+  </data>
+  <data name="BOT_PROMPT_ISSUE_WITHDRAWAL_OTHER_ATM_CALLING_CONS" xml:space="preserve">
+    <value>Vous allez entrer en relation avec votre conseiller</value>
+  </data>
+  <data name="BOT_PROMPT_ISSUE_WITHDRAWAL_OTHER_ATM_CARD_KO" xml:space="preserve">
+    <value>Il se peut qu'il s'agisse d'un dysfonctionnement de votre carte. Nous vous suggérons de commander une nouvelle carte. Voulez-vous commander une nouvelle carte ou contacter votre conseiller ?</value>
+  </data>
+  <data name="BOT_PROMPT_ISSUE_WITHDRAWAL_OTHER_ATM_CONTACT_CONS" xml:space="preserve">
+    <value>Je veux contacter mon conseiller</value>
+  </data>
+  <data name="BOT_PROMPT_ISSUE_WITHDRAWAL_OTHER_ATM_NO" xml:space="preserve">
+    <value>Non</value>
+  </data>
+  <data name="BOT_PROMPT_ISSUE_WITHDRAWAL_OTHER_ATM_ORDER_NEW_CARD" xml:space="preserve">
+    <value>Je veux commander une nouvelle carte</value>
+  </data>
+  <data name="BOT_PROMPT_ISSUE_WITHDRAWAL_OTHER_ATM_YES" xml:space="preserve">
+    <value>Oui</value>
+  </data>
+  <data name="BOT_PROMPT_ISSUE_WITHDRAWAL_YESNO" xml:space="preserve">
+    <value>Vous avez atteind votre plafond de retrait domestique. Voulez vous l'augmenter ?</value>
+  </data>
+  <data name="BOT_PROMPT_ISSUE_WITHDRAWAL_YES_INCREASE" xml:space="preserve">
+    <value>Oui je veux augmenter mon plafond</value>
+  </data>
+  <data name="BOT_PROMPT_TOO_MANY_TRY" xml:space="preserve">
+    <value>Désolé j'ai du mal à comprendre : Votre agence la plus proche se trouve (Geolocalisation)</value>
+  </data>
+  <data name="BOT_PROMPT_TRY_AGAIN_CHOOSE_ISSUE" xml:space="preserve">
+    <value>Ce choix ne fait pas partie d'un choix valide</value>
+  </data>
+  <data name="BOT_WELCOME" xml:space="preserve">
+    <value>Bonjour je suis un bot, à votre service</value>
+  </data>
+  <data name="DBG_CARD_RESOLVER" xml:space="preserve">
+    <value>Bienvenue dans le résolveur de problème de carte bleue</value>
+  </data>
+  <data name="ERROR_DEBUG_SOMETHING_WRONG_WITH_CARD" xml:space="preserve">
+    <value>Erreur dans le numéro de carte bleue</value>
+  </data>
+  <data name="USER_DLG_AUTHENTICATION" xml:space="preserve">
+    <value>Nous allons désormais procéder à votre authentification</value>
+  </data>
+  <data name="USER_DLG_AUTHENTICATION_WRONG_ANSWER" xml:space="preserve">
+    <value>Cette réponse est erronnée</value>
+  </data>
+  <data name="USER_DLG_BACK_TO_START" xml:space="preserve">
+    <value>Je reviens au début....</value>
+  </data>
+  <data name="USER_DLG_CARD_NUMBER" xml:space="preserve">
+    <value>Quels sont les numéros de votre carte ?</value>
+  </data>
+  <data name="USER_DLG_CHECKING_AUTHENTICATION" xml:space="preserve">
+    <value>Vérification de vos informations ....</value>
+  </data>
+  <data name="USER_DLG_CHECKING_CARD_BLOCKED" xml:space="preserve">
+    <value>Votre carte est bloquée, veuillez contacter votre conseiller.</value>
+  </data>
+  <data name="USER_DLG_CHECKING_CARD_KO" xml:space="preserve">
+    <value>Numéro de carte erroné, veuillez contacter votre conseiller.</value>
+  </data>
+  <data name="USER_DLG_CHECKING_CARD_NUMBER" xml:space="preserve">
+    <value>Vérification du numéros de votre carte en cours ...</value>
+  </data>
+  <data name="USER_DLG_CHECKING_CARD_OVERDRAFT" xml:space="preserve">
+    <value>Vous avez dépassé votre montant de découvert. Veuillez contacter votre conseiller.</value>
+  </data>
+  <data name="USER_DLG_CHECKING_WITHDRAWAL" xml:space="preserve">
+    <value>Vérification de votre demande en cours....</value>
+  </data>
+  <data name="USER_DLG_NEW_CARD_ORDERED" xml:space="preserve">
+    <value>Votre nouvelle carte est commandée. Merci de votre confiance. A bientôt</value>
+  </data>
+  <data name="USER_DLG_NEW_THRESHOLD_ACCEPTED" xml:space="preserve">
+    <value>Votre plafond a bien été modifié, merci et à bientôt</value>
+  </data>
+  <data name="USER_DLG_NOT_IMPLEMENTED" xml:space="preserve">
+    <value>Fonction non implementée</value>
+  </data>
+  <data name="USER_DLG_THRESHOLD_TO_HIGH" xml:space="preserve">
+    <value>Plafond non autorisé (max 150)</value>
+  </data>
+  <data name="WWWWW" xml:space="preserve">
+    <value>WWWWW</value>
+  </data>
+  <data name="Z_COG_BOT_CONTACT_YOUR_ADVISOR" xml:space="preserve">
+    <value>Désolé je ne peux rien faire pour une carte bloquée. Pouvez-vous contacter votre conseiller ?</value>
+  </data>
+  <data name="Z_COG_BOT_HOW_HELP_YOU" xml:space="preserve">
+    <value>Bonjour, que puis-je faire pour vous ?</value>
+  </data>
+  <data name="Z_COG_BOT_LANGUAGE_NOT_SUPPORTED" xml:space="preserve">
+    <value>Désolé, je n'ai pas appris votre langue seriez vous parler en Français, En Anglais ? Merci</value>
+  </data>
+  <data name="Z_COG_BOT_LUIS_NOT_UNDERSTAND_LEVEL_1" xml:space="preserve">
+    <value>Désolé je n'ai pas compris, pourriez-vous recommencer ?</value>
+  </data>
+  <data name="Z_COG_BOT_LUIS_NOT_UNDERSTAND_LEVEL_2" xml:space="preserve">
+    <value>Vous me voyez navré mais je n'ai pas compris, auriez-vous l'obligeance de recommencer ?</value>
+  </data>
+  <data name="Z_COG_BOT_WELCOME" xml:space="preserve">
+    <value>Je suis un bot à votre service</value>
+  </data>
+</root>

@@ -1,0 +1,318 @@
+{
+  "luis_schema_version": "1.3.0",
+  "name": "PocSPBBot",
+  "desc": "",
+  "culture": "fr-fr",
+  "intents": [
+    {
+      "name": "Issue"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "Salutation"
+    }
+  ],
+  "entities": [
+    {
+      "name": "IssueCard",
+      "children": [
+        "BlockCard",
+        "BreakCard",
+        "StoleCard",
+        "LossCard"
+      ]
+    },
+    {
+      "name": "IssueType",
+      "children": [
+        "Withdrawal",
+        "Transfert",
+        "Payment"
+      ]
+    },
+    {
+      "name": "PayMode",
+      "children": [
+        "Card",
+        "Cheque"
+      ]
+    },
+    {
+      "name": "WithdrawalLocalization",
+      "children": [
+        "Domestic",
+        "Abroad"
+      ]
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "bing_entities": [],
+  "actions": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "bonjour",
+      "intent": "Salutation",
+      "entities": []
+    },
+    {
+      "text": "salutation à vous",
+      "intent": "Salutation",
+      "entities": []
+    },
+    {
+      "text": "salutation",
+      "intent": "Salutation",
+      "entities": []
+    },
+    {
+      "text": "bonjour à vous",
+      "intent": "Salutation",
+      "entities": []
+    },
+    {
+      "text": "salut",
+      "intent": "Salutation",
+      "entities": []
+    },
+    {
+      "text": "j'ai un problème de retrait",
+      "intent": "Issue",
+      "entities": []
+    },
+    {
+      "text": "je n'arrive pas à payer",
+      "intent": "Issue",
+      "entities": [
+        {
+          "entity": "IssueType::Payment",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "je n'arrive pas à tirer de l'argent avec ma carte",
+      "intent": "Issue",
+      "entities": [
+        {
+          "entity": "IssueType::Withdrawal",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "PayMode::Card",
+          "startPos": 13,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "j'ai un probleme",
+      "intent": "Issue",
+      "entities": []
+    },
+    {
+      "text": "je n'arrive pas à payer avec ma carte",
+      "intent": "Issue",
+      "entities": [
+        {
+          "entity": "IssueType::Payment",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "PayMode::Card",
+          "startPos": 9,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "je n'arrive pas à retirer de l'argent",
+      "intent": "Issue",
+      "entities": [
+        {
+          "entity": "IssueType::Withdrawal",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "l'agence ne veut pas me donner de l'argent",
+      "intent": "Issue",
+      "entities": [
+        {
+          "entity": "IssueType::Withdrawal",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "je voudrais retirer de l'argent avec ma carte , mais elle ne fonctionne plus",
+      "intent": "Issue",
+      "entities": [
+        {
+          "entity": "IssueType::Withdrawal",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "PayMode::Card",
+          "startPos": 9,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "le retrait d'argent ne fonctionne pas",
+      "intent": "Issue",
+      "entities": [
+        {
+          "entity": "IssueType::Withdrawal",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "je n'arrive pas à payer avec ma carte ni avec un cheque",
+      "intent": "Issue",
+      "entities": [
+        {
+          "entity": "IssueType::Payment",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "PayMode::Card",
+          "startPos": 9,
+          "endPos": 9
+        },
+        {
+          "entity": "PayMode::Cheque",
+          "startPos": 13,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "ma carte est bloquée",
+      "intent": "Issue",
+      "entities": [
+        {
+          "entity": "IssueCard::BlockCard",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "PayMode::Card",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "on n'a volé ma carte",
+      "intent": "Issue",
+      "entities": [
+        {
+          "entity": "IssueCard::StoleCard",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "PayMode::Card",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "ma carte est perdue",
+      "intent": "Issue",
+      "entities": [
+        {
+          "entity": "IssueCard::LossCard",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "PayMode::Card",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "j'ai perdu ma carte",
+      "intent": "Issue",
+      "entities": [
+        {
+          "entity": "IssueCard::LossCard",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "PayMode::Card",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "je ne retrouve plus ma carte",
+      "intent": "Salutation",
+      "entities": [
+        {
+          "entity": "IssueCard::LossCard",
+          "startPos": 1,
+          "endPos": 3
+        },
+        {
+          "entity": "PayMode::Card",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "perdu ma carte",
+      "intent": "Issue",
+      "entities": [
+        {
+          "entity": "IssueCard::LossCard",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "PayMode::Card",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "carte perdu",
+      "intent": "Issue",
+      "entities": [
+        {
+          "entity": "IssueCard::LossCard",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "PayMode::Card",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    }
+  ]
+}
