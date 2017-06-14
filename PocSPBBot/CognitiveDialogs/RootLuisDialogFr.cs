@@ -23,6 +23,7 @@ namespace PocSPBBot.CognitiveDialogs
         [LuisIntent("None")]
         public async Task None(IDialogContext context, LuisResult result)
         {
+           
             //userState.Sentences.Add(result.Query);
 
             //await CheckInteraction.GetSentimentAsync(userState);

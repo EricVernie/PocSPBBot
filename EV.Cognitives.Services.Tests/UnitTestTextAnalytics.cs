@@ -109,7 +109,8 @@ namespace FRDX.Cognitives.Services.Tests
              new List<string> {   "J'ai un problème",
                                   "J'ai un problème avec ma carte bleue",
                                   "Je suis à paris je voudrais retirer 200$",
-                                  "Ma carte est bloquée"
+                                  "Ma carte est bloquée",
+                                  "Je veux retirer de l'argent"
 
              }, 0);
         }

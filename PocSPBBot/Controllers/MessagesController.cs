@@ -27,9 +27,15 @@ using System.Threading;
 
 namespace PocSPBBot
 {
-    //[BotAuthentication]
+  //  [BotAuthentication]
+   
     public class MessagesController : ApiController
     {
+        public async Task<string> Get()
+        {
+            
+            return "Eric Vernié";
+        }
         /// <summary>
         /// POST: api/Messages
         /// Receive a message from a user and reply to it
